@@ -1,14 +1,14 @@
-package com.ckranz.ws.soap;
+package com.example.ws.soap;
 
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class HellowebserviceApplicationTests {
+class HellowebserviceApplicationTests {
 
 	@Test
-	public void contextLoads() {
+	void contextLoads() {
 	}
 
 }

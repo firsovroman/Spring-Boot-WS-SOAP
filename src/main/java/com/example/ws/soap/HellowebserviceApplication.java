@@ -1,4 +1,4 @@
-package com.ckranz.ws.soap;
+package com.example.ws.soap;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

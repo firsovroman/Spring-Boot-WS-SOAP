@@ -1,4 +1,4 @@
-package com.ckranz.ws.soap;
+package com.example.ws.soap;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;

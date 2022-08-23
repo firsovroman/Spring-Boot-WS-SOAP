@@ -61,6 +61,31 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
+			<plugin>
+				<groupId>org.apache.cxf</groupId>
+				<artifactId>cxf-xjc-plugin</artifactId>
+				<version>3.3.0</version>
+				<executions>
+
+					<execution>
+						<id>xsdtojava</id>
+						<goals>
+							<goal>xsdtojava</goal>
+						</goals>
+						<configuration>
+							<sourceRoot>${basedir}/target/generated-sources/cxf-xjc</sourceRoot>
+							<xsdOptions>
+								<xsdOption>
+									<xsd>src/main/resources/schemas/entity_shema.xsd</xsd>
+									<packagename>com.example.ws.soap</packagename>
+								</xsdOption>
+							</xsdOptions>
+						</configuration>
+					</execution>
+
+				</executions>
+			</plugin>
+
 			<!--Настраиваем компилятор-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
