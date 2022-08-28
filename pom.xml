@@ -61,6 +61,8 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
+<!--	оболочка вокруг инструмента JAXB XJC для обработки задач XSD -> Java-->
+<!--		можно парсить несколько схем добавляя execution-->
 			<plugin>
 				<groupId>org.apache.cxf</groupId>
 				<artifactId>cxf-xjc-plugin</artifactId>
@@ -68,7 +70,7 @@
 				<executions>
 
 					<execution>
-						<id>xsdtojava</id>
+						<id>my-xsdtojava</id>
 						<goals>
 							<goal>xsdtojava</goal>
 						</goals>
